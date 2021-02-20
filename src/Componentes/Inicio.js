@@ -131,7 +131,7 @@ export const Inicio = () => {
           </Col>
         </Row>
         <Row>
-          <Col className=" solutionsSection">
+          <Col className="solutionsSection">
             <Row>
               <Col className=" col-12 py-5">
                 <small className="h5 text-uppercase text-muted">
@@ -237,7 +237,7 @@ export const Inicio = () => {
       </Container>
       <section className="container-fluid servicesSection my-5">
         <Row>
-          <Col className=" col-12 py-3">
+          <Col className="col-12 py-3">
             <small className="h5 text-uppercase text-muted">
               Nuestros servicios
             </small>

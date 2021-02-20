@@ -26,7 +26,7 @@ export const DetailedService = (props) => {
         <CardText>{props.paragraph2}</CardText>
         {props.mainSpan}
         <Row>
-          <Col className="col-6">
+          <Col className="col-md-6">
             <ListGroup className="lista">
               <ListGroupItem>
                 <FontAwesomeIcon icon={faCheck} className="logoColor"/>
@@ -42,7 +42,7 @@ export const DetailedService = (props) => {
               </ListGroupItem>
             </ListGroup>
           </Col>
-          <Col className="col-6">
+          <Col className="col-md-6">
             <ListGroup className="lista">
               <ListGroupItem>
                 <FontAwesomeIcon icon={faCheck} className="logoColor"/>
