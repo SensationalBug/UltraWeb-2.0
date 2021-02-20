@@ -22,11 +22,8 @@ import {
   faDesktop,
   faCloud,
   faCloudUploadAlt,
-  faPhone,
-  faMobile,
   faMobileAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import { FaWeebly } from "react-icons/fa";
 
 export const Inicio = () => {
   const [spinMainLogo, setSpinMainLogo] = useState(false);
