@@ -1,38 +1,112 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import "react-alice-carousel/lib/alice-carousel.css";
+.App{
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navBar, .footerSection {
+  background-color: #3c99c5;
+  transition: .7s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.link{
+  color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.link:hover{
+  color: #152525;
+}
+
+.logoColor{
+  color: #3c99c5;
+}
+
+.homeSection, .servicesSection{
+  height: 80vh;
+}
+
+.solutionsSection{
+  height: 110vh;
+}
+
+.carta{
+  border-radius: 10%;
+  transition: .5s;
+}
+
+.carta:hover{
+  box-shadow: 0 0 34px 0 #3c99c5;
+}
+
+.servicesSection{
+  background-color: #b4e7ff;
+  height: 100%;
+}
+
+#boton{
+  border: none;
+  background: #ffffff;
+  color: black;
+  transition: .5s;
+}
+
+#boton:hover{
+  background-color: #3c99c5;
   color: white;
+  transition: .5s;
 }
 
-.App-link {
-  color: #61dafb;
+.serviceName{
+  margin-top: -50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.technologiesSection{
+  background-color: #f8f8f8;
+}
+
+.imageTechSize{
+  width: 150px;
+  height: 100px;
+}
+
+.techCard{
+  transition: .5s;
+  height: 140px;
+}
+
+.techCard:hover{
+  font-size: 25px;
+}
+
+.carouselImg{
+  width: 600px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 600px){
+  .navBar{
+    text-align: left;
   }
-  to {
-    transform: rotate(360deg);
+  .toggleLogo, .serviceButton, .footerMsg{
+    display: none;
+  }
+  .homeSection{
+    height: 85vh;
+  }
+  .solutionsSection{
+    height: 140vh;
+  }
+  .carouselImg{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1400px){
+  .homeSection{
+    height: 50vh;
+  }
+  .solutionsSection{
+    height: 80vh;
   }
 }
