@@ -289,7 +289,7 @@ export const Inicio = () => {
           <Technologies />
         </Row>
       </Container>
-      <Container className="pagesSection  my-5">
+      <Container className="pagesSection my-5">
         <Row>
           <Col className=" col-12 py-4 mb-3">
             <small className="h5 text-uppercase text-muted">Proyectos</small>

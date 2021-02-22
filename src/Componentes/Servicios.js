@@ -1,9 +1,10 @@
 import { React } from "react";
+import { Row, Col } from 'reactstrap';
 
 export const Servicios = () => {
   return (
-    <div>
-      <div>Pagina de servicios</div>
-    </div>
+    <Row>
+      <Col>KLK</Col>
+    </Row>
   );
 };
