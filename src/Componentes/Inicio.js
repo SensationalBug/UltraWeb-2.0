@@ -1,27 +1,20 @@
 import { React, useState } from "react";
 
 import { Footer } from "./Footer";
-import { DetailedService } from "./Servicios/DetailedService";
-import { Technologies } from "./Servicios/Technologies";
-import { Carrusel } from "./Servicios/Carrusel";
+import { Carrusel } from "./BackgroundComponents/Carrusel";
+import { ServiceCard } from "./BackgroundComponents/ServiceCard";
+import { Technologies } from "./BackgroundComponents/Technologies";
+import { ServiceButton } from "./BackgroundComponents/ServiceButton";
+import { DetailedService } from "./BackgroundComponents/DetailedService";
+import { Titular, SmallTitle } from "./BackgroundComponents/Titular";
 
-import {
-  Row,
-  Col,
-  Container,
-  Card,
-  CardBody,
-  CardTitle,
-  CardText,
-  Button,
-} from "reactstrap";
+import { Row, Col, Container } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLaptopCode,
   faCode,
   faDesktop,
   faCloud,
-  faCloudUploadAlt,
   faMobileAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -110,15 +103,11 @@ export const Inicio = () => {
   return (
     <>
       <Container>
-        <Row className="homeSection  justify-content-center">
-          <Col className="my-auto col-md-5 col-10">
-            <p className="h2 text-sm-center text-md-left text-uppercase">
-              Diseñando tu web de la manera mas rápida y con la mejor calidad
-            </p>
-            <p className="text-sm-center text-md-left">
-              Nuestros servicios te ayudarán a mostrar tu imagen en la Web
-            </p>
-          </Col>
+        <Row className="homeSection justify-content-center">
+          <Titular
+            title="Diseñando tu web de la manera mas rápida y con la mejor calidad"
+            subTitle="Nuestros servicios te ayudarán a mostrar tu imagen en la Web"
+          />
           <Col className="my-auto toggleLogo">
             <FontAwesomeIcon
               onMouseEnter={() => toggle(spinMainLogo, setSpinMainLogo)}
@@ -130,174 +119,104 @@ export const Inicio = () => {
             />
           </Col>
         </Row>
-        <Row>
-          <Col className="solutionsSection">
-            <Row>
-              <Col className=" col-12 py-5">
-                <small className="h5 text-uppercase text-muted">
-                  Desarrollo web
-                </small>
-                <p className="h2 texto">Soluciones para todos los proyectos</p>
-                <p className="col-10 mx-auto pt-4">
-                  Reproducir diseños y aplicaciones dinámicas y de calidad para
-                  satisfacer a nuestros usuarios es nuestro objetivo principal,
-                  esto con el fin de ser una empresa reconocida en el area de
-                  desarrollo web a nivel mundial.
-                </p>
-              </Col>
-              <Col className="col-12 col-md-4  mt-5">
-                <Card
-                  className="carta h-100"
-                  onMouseEnter={() =>
-                    toggle(spinSolutionLogo1, setSpinSolutionLogo1)
-                  }
-                  onMouseLeave={() =>
-                    toggle(spinSolutionLogo1, setSpinSolutionLogo1)
-                  }
-                >
-                  <CardBody>
-                    <FontAwesomeIcon
-                      icon={faCode}
-                      size="4x"
-                      className="logoColor"
-                      spin={spinSolutionLogo1}
-                    />
-                  </CardBody>
-                  <CardTitle tag="h5">Gestión de diseño</CardTitle>
-                  <CardBody>
-                    <CardText>
-                      Transformamos la forma de soportar al negocio con un
-                      modelo preventivo e innovador que permite liberar la carga
-                      de trabajo de soporte de aplicaciones y tecnologías de la
-                      información a la empresa.
-                    </CardText>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col className="col-12 col-md-4  mt-5">
-                <Card
-                  className="carta h-100"
-                  onMouseEnter={() =>
-                    toggle(spinSolutionLogo2, setSpinSolutionLogo2)
-                  }
-                  onMouseLeave={() =>
-                    toggle(spinSolutionLogo2, setSpinSolutionLogo2)
-                  }
-                >
-                  <CardBody>
-                    <FontAwesomeIcon
-                      icon={faMobileAlt}
-                      size="4x"
-                      className="logoColor"
-                      spin={spinSolutionLogo2}
-                    />
-                  </CardBody>
-                  <CardTitle tag="h5">Diseño responsivo</CardTitle>
-                  <CardBody>
-                    <CardText>
-                      Acoplamos nuestros diseños a todo tipo de dispositivo
-                      para que los sitios puedan ser vistos desde cualquier
-                      parte sin problema alguno.
-                    </CardText>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col className="col-12 col-md-4  mt-5">
-                <Card
-                  className="carta h-100"
-                  onMouseEnter={() =>
-                    toggle(spinSolutionLogo3, setSpinSolutionLogo3)
-                  }
-                  onMouseLeave={() =>
-                    toggle(spinSolutionLogo3, setSpinSolutionLogo3)
-                  }
-                >
-                  <CardBody>
-                    <FontAwesomeIcon
-                      icon={faCloudUploadAlt}
-                      size="4x"
-                      className="logoColor"
-                      spin={spinSolutionLogo3}
-                    />
-                  </CardBody>
-                  <CardTitle tag="h5">Gestión de carga a la nube</CardTitle>
-                  <CardBody>
-                    <CardText>
-                      Administramos todos los servicios que se necesite subir a la
-                      nube para su gestión, estos servicios se incluyen en los planes
-                      de hosting web, esto facilita que los datos siempre esten
-                      presentes y de la manera mas rápida posible.
-                    </CardText>
-                  </CardBody>
-                </Card>
-              </Col>
-            </Row>
-          </Col>
+      </Container>
+
+      <Container className="solutionsSection">
+        <Row className="mt-5">
+          <SmallTitle
+            title="Desarrollo web"
+            subTitle="Soluciones para todos los proyectos"
+          />
+          <p className="col-10 mx-auto pt-0">
+            Reproducir diseños y aplicaciones dinámicas y de calidad para
+            satisfacer a nuestros usuarios es nuestro objetivo principal, esto
+            con el fin de ser una empresa reconocida en el area de desarrollo
+            web a nivel mundial.
+          </p>
+          <ServiceCard
+            enter={() => toggle(spinSolutionLogo1, setSpinSolutionLogo1)}
+            out={() => toggle(spinSolutionLogo1, setSpinSolutionLogo1)}
+            icon={faCode}
+            spin={spinSolutionLogo1}
+            title="Gestión de diseño"
+            subTitle="Transformamos la forma de soportar al negocio con un
+                  modelo preventivo e innovador que permite liberar la carga
+                  de trabajo de soporte de aplicaciones y tecnologías de la
+                  información a la empresa."
+          />
+          <ServiceCard
+            enter={() => toggle(spinSolutionLogo2, setSpinSolutionLogo2)}
+            out={() => toggle(spinSolutionLogo2, setSpinSolutionLogo2)}
+            icon={faMobileAlt}
+            spin={spinSolutionLogo2}
+            title="Diseño responsivo"
+            subTitle="Acoplamos nuestros diseños a todo tipo de dispositivo para
+                que los sitios puedan ser vistos desde cualquier parte sin
+                problema alguno. En UltraWeb utlizamos las mejores tecnologías para 
+                el diseño responsivo."
+          />
+          <ServiceCard
+            enter={() => toggle(spinSolutionLogo3, setSpinSolutionLogo3)}
+            out={() => toggle(spinSolutionLogo3, setSpinSolutionLogo3)}
+            icon={faCloud}
+            spin={spinSolutionLogo3}
+            title="Gestión de carga a la nube"
+            subTitle="Administramos todos los servicios que se necesite subir a
+                la nube para su gestión, estos servicios se incluyen en
+                los planes de hosting web, esto facilita que los datos
+                siempre esten presentes y de la manera mas rápida."
+          />
         </Row>
       </Container>
+
       <section className="container-fluid servicesSection my-5">
         <Row>
-          <Col className="col-12 py-3">
-            <small className="h5 text-uppercase text-muted">
-              Nuestros servicios
-            </small>
-            <p className="h2">Satisfaciendo todas sus necesidades</p>
-          </Col>
+          <SmallTitle
+            title="Nuestros servicios"
+            subTitle="Satisfaciendo todas sus necesidades"
+          />
         </Row>
         <Container>
           <Row>
             <Col className=" col-12 col-md-4">
-              <Button
-                id="boton"
-                onClick={() => changeView(1)}
-                className="col-3 col-md-10 mx-1 mx-md-0 my-2 pl-3 py-3 py-md-5"
-              >
-                <FontAwesomeIcon icon={faCode} />
-                <span className="h5 mx-2 serviceButton">
-                  Creación de WebSites
-                </span>
-              </Button>
-              <Button
-                id="boton"
-                onClick={() => changeView(2)}
-                className="col-3 col-md-10 mx-1 mx-md-0 my-2 py-3 py-md-5"
-              >
-                <FontAwesomeIcon icon={faDesktop} />
-                <span className="h5 mx-2 serviceButton">
-                  Servicios de UX/UI
-                </span>
-              </Button>
-              <Button
-                id="boton"
-                onClick={() => changeView(3)}
-                className="col-3 col-md-10 mx-1 mx-md-0 my-2 py-3 py-md-5"
-              >
-                <FontAwesomeIcon icon={faCloud} />
-                <span className="h5 mx-2 serviceButton">Cloud Computing</span>
-              </Button>
+              <ServiceButton
+                click={() => changeView(1)}
+                icon={faCode}
+                title="Creación de WebSites"
+              />
+              <ServiceButton
+                click={() => changeView(2)}
+                icon={faDesktop}
+                title="Servicios de UX/UI"
+              />
+              <ServiceButton
+                click={() => changeView(3)}
+                icon={faCloud}
+                title="Cloud Computing"
+              />
             </Col>
             <Col className="mb-3">{selectView()}</Col>
           </Row>
         </Container>
       </section>
+
       <Container className="technologiesSection ">
         <Row>
-          <Col className=" col-12 py-4 mb-5">
-            <small className="h5 text-uppercase text-muted">Tecnologias</small>
-            <p className="h2">Siempre el lado de la innovación</p>
-          </Col>
+          <SmallTitle
+            title="Tecnologias"
+            subTitle="Siempre el lado de la innovación"
+          />
           <Technologies />
         </Row>
       </Container>
+
       <Container className="pagesSection my-5">
         <Row>
-          <Col className=" col-12 py-4 mb-3">
-            <small className="h5 text-uppercase text-muted">Proyectos</small>
-            <p className="h2">Sitios Web desarrollados.</p>
-          </Col>
+          <SmallTitle title="Proyectos" subTitle="Sitios Web desarrollados" />
           <Carrusel />
         </Row>
       </Container>
+
       <Footer />
     </>
   );

@@ -19,6 +19,11 @@
   color: #152525;
 }
 
+.dropdown{
+  display: flex;
+  justify-content: center;
+}
+
 .logoColor {
   color: #3c99c5;
 }
@@ -29,12 +34,13 @@
 }
 
 .solutionsSection {
-  height: 110vh;
+  height: 100%;
 }
 
 .carta {
   border-radius: 10%;
   transition: 0.5s;
+  height: 100%;
 }
 
 .carta:hover {
@@ -86,6 +92,10 @@
   height: 500px;
 }
 
+.serviceImagen{
+  width: 100%;
+}
+
 @media only screen and (max-width: 600px) {
   .navBar {
     text-align: left;
@@ -103,9 +113,6 @@
   .homeSection {
     height: 85vh;
   }
-  .solutionsSection {
-    height: 100%;
-  }
   .carouselImg {
     width: 100%;
     height: 100%;
@@ -118,8 +125,5 @@
 @media only screen and (min-width: 1400px) {
   .homeSection {
     height: 50vh;
-  }
-  .solutionsSection {
-    height: 80vh;
   }
 }
