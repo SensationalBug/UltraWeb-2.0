@@ -1,23 +1,14 @@
 import { React } from "react";
 import { Col, Card, CardBody, CardText, CardTitle } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const ServiceCard = (props) => {
+  console.log(props)
   return (
     <Col className="col-12 col-md-4 mt-5">
       <Card
-        className="carta"
-        onMouseEnter={() => props.enter()}
-        onMouseLeave={() => props.out()}
+        className="service"
       >
-        <CardBody>
-          <FontAwesomeIcon
-            icon={props.icon}
-            size="4x"
-            className="logoColor"
-            spin={props.spin}
-          />
-        </CardBody>
+        <CardBody>{props.icono}</CardBody>
         <CardTitle tag="h5">{props.title}</CardTitle>
         <CardBody>
           <CardText>{props.subTitle}</CardText>

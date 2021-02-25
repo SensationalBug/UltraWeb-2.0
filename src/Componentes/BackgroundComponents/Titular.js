@@ -16,7 +16,7 @@ export const Titular = (props) => {
 
 export const SmallTitle = (props) => {
   return (
-    <Col className="col-12 py-3">
+    <Col className="col-12 py-2">
       <small className="h5 text-uppercase text-muted">{props.title}</small>
       <p className="h2">{props.subTitle}</p>
     </Col>

@@ -7,7 +7,7 @@
 
 .navBar,
 .footerSection {
-  background-color: #3c99c5;
+  background-color: #034ea2;
   transition: 0.7s;
 }
 
@@ -19,13 +19,17 @@
   color: #152525;
 }
 
-.dropdown{
-  display: flex;
-  justify-content: center;
+.openCollapse{
+  margin-left: 72%;
+  margin-top: 25px;
+}
+
+.color{
+  background-color: #034ea2;
 }
 
 .logoColor {
-  color: #3c99c5;
+  color: #034ea2;
 }
 
 .homeSection,
@@ -44,11 +48,11 @@
 }
 
 .carta:hover {
-  box-shadow: 0 0 34px 0 #3c99c5;
+  box-shadow: 0 0 34px 0 #034ea2;
 }
 
 .servicesSection {
-  background-color: #b4e7ff;
+  background-color: #33b4f0;
   height: 100%;
 }
 
@@ -60,7 +64,7 @@
 }
 
 #boton:hover {
-  background-color: #3c99c5;
+  background-color: #034ea2;
   color: white;
   transition: 0.5s;
 }
@@ -87,13 +91,32 @@
   font-size: 25px;
 }
 
+.pagesSection {
+  height: 100%;
+}
+
 .carouselImg {
   width: 600px;
   height: 500px;
 }
 
-.serviceImagen{
+.serviceImagen {
   width: 100%;
+}
+
+.linkService {
+  height: 100vh;
+}
+
+.service {
+  border-radius: 10%;
+  transition: 0.5s;
+  height: 100%;
+}
+
+.service:hover {
+  transform: translate(0, -5%);
+  box-shadow: 0 0 34px 0 #33b4f0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -120,10 +143,18 @@
   .footerSection {
     font-size: 10px;
   }
+  .openCollapse{
+    margin-left: 80%;
+    margin-top: 25px;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
   .homeSection {
     height: 50vh;
+  }
+  .openCollapse{
+    margin-left: 80%;
+    margin-top: 25px;
   }
 }

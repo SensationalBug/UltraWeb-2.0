@@ -2,7 +2,7 @@ import { React, useState } from "react";
 
 import { Footer } from "./Footer";
 import { Carrusel } from "./BackgroundComponents/Carrusel";
-import { ServiceCard } from "./BackgroundComponents/ServiceCard";
+import { ServiceCardHome } from "./BackgroundComponents/ServiceCardHome";
 import { Technologies } from "./BackgroundComponents/Technologies";
 import { ServiceButton } from "./BackgroundComponents/ServiceButton";
 import { DetailedService } from "./BackgroundComponents/DetailedService";
@@ -133,10 +133,10 @@ export const Inicio = () => {
             con el fin de ser una empresa reconocida en el area de desarrollo
             web a nivel mundial.
           </p>
-          <ServiceCard
+          <ServiceCardHome
             enter={() => toggle(spinSolutionLogo1, setSpinSolutionLogo1)}
             out={() => toggle(spinSolutionLogo1, setSpinSolutionLogo1)}
-            icon={faCode}
+            icono={faCode}
             spin={spinSolutionLogo1}
             title="Gestión de diseño"
             subTitle="Transformamos la forma de soportar al negocio con un
@@ -144,10 +144,10 @@ export const Inicio = () => {
                   de trabajo de soporte de aplicaciones y tecnologías de la
                   información a la empresa."
           />
-          <ServiceCard
+          <ServiceCardHome
             enter={() => toggle(spinSolutionLogo2, setSpinSolutionLogo2)}
             out={() => toggle(spinSolutionLogo2, setSpinSolutionLogo2)}
-            icon={faMobileAlt}
+            icono={faMobileAlt}
             spin={spinSolutionLogo2}
             title="Diseño responsivo"
             subTitle="Acoplamos nuestros diseños a todo tipo de dispositivo para
@@ -155,10 +155,10 @@ export const Inicio = () => {
                 problema alguno. En UltraWeb utlizamos las mejores tecnologías para 
                 el diseño responsivo."
           />
-          <ServiceCard
+          <ServiceCardHome
             enter={() => toggle(spinSolutionLogo3, setSpinSolutionLogo3)}
             out={() => toggle(spinSolutionLogo3, setSpinSolutionLogo3)}
-            icon={faCloud}
+            icono={faCloud}
             spin={spinSolutionLogo3}
             title="Gestión de carga a la nube"
             subTitle="Administramos todos los servicios que se necesite subir a
