@@ -65,7 +65,7 @@ export const ServiceComponent = (props) => {
         </Row>
       </Container>
 
-      <section style={{ backgroundColor: "#33b4f0" }} className="py-5">
+      <section style={{ backgroundColor: "#33b4f0" }} className="py-5 text-white">
         <SmallTitle
           title={serviceProps.lastTitle}
           subTitle={serviceProps.lastSubTitle}

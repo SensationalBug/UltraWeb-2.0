@@ -20,7 +20,7 @@ export const Servicios = () => {
           <Row className="justify-content-center">
             <FaAngleDown
               size="2em"
-              onMouseEnter={() => openCollapse()}
+              onClick={() => openCollapse()}
               className="openCollapse fixed-top text-white"
             />
             <Collapse
