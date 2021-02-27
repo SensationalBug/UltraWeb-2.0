@@ -58,7 +58,7 @@ export const ServiceCardNosotros = (props) => {
 
 export const ServiceCardTeam = (props) => {
   return (
-    <Col className="col-12 col-md-4 mt-5 mx-auto">
+    <Col className="col-10 col-md-4 mt-5 mx-auto">
       <Card className={props.clase}>
         <CardBody>{props.icono}</CardBody>
         <CardTitle tag="h5" style={{ color: "#034ea2" }}>
