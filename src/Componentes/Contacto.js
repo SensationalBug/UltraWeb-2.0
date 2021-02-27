@@ -1,7 +1,7 @@
 import { React } from "react";
 import { Footer } from "./Footer";
 import { Container, Row, Col, Form, Input, Button } from "reactstrap";
-import "../CSS/Contacto.css";
+// import "../CSS/Contacto.css";
 
 export const Contacto = () => {
   return (
@@ -15,17 +15,27 @@ export const Contacto = () => {
             </p>
           </Col>
           <Col className="col-12">
-            <Form className="form pt-2">
+            <Form className="form pt-2" style={{ backgroundColor: "#034ea2" }}>
               <Row className="m-md-3 m-1 justify-content-center">
                 <Col className="col-md-6 col-12">
                   <Input
-                    className="inputForm my-3"
+                    style={{ height: "70px", fontSize: "20px" }}
+                    className="my-3"
                     placeholder="Nombre/Empresa"
                   />
-                  <Input className="inputForm my-3" placeholder="E-mail" />
-                  <Input className="inputForm my-3" placeholder="Asunto" />
+                  <Input
+                    style={{ height: "70px", fontSize: "20px" }}
+                    className="my-3"
+                    placeholder="E-mail"
+                  />
+                  <Input
+                    style={{ height: "70px", fontSize: "20px" }}
+                    className="my-3"
+                    placeholder="Asunto"
+                  />
                   <textarea
-                    className="inputForm my-3 form-control"
+                    style={{ height: "70px", fontSize: "20px" }}
+                    className="my-3 form-control"
                     placeholder="Mensajes"
                   />
                   <Button color="success" className="w-50 py-3 my-3 border">

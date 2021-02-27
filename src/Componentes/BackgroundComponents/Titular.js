@@ -3,7 +3,7 @@ import { Col } from "reactstrap";
 
 export const Titular = (props) => {
   return (
-    <Col className="my-auto col-md-6 col-10">
+    <Col className="my-md-auto col-md-6 col-10 order-md-0 order-1">
       <p className="h2 text-sm-center text-md-left text-uppercase">
         {props.title}
       </p>

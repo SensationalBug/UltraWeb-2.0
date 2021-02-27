@@ -33,7 +33,7 @@ import { DiFirebase, DiIllustrator, DiLess, DiMaterializecss, DiMysql, DiOnedriv
 
 export const Component1 = () => {
   const serviceProps = {
-    mainIcon: <FaCode size="20em" color="#034ea2" />,
+    mainIcon: <FaCode size="14em" color="#034ea2" />,
     mainTitle: "Creación de WebSites",
     mainSubTitle:
       "Impulsando la transformación digital de nuestros clientes con las nuevas tecnologías",
@@ -85,7 +85,7 @@ export const Component1 = () => {
 
 export const Component2 = () => {
   const serviceProps = {
-    mainIcon: <FaElementor size="20em" color="#034ea2" />,
+    mainIcon: <FaElementor size="14em" color="#034ea2" />,
     mainTitle: "Servicio de UX/UI",
     mainSubTitle:
       "Trabaja con nuestros diseñadores para construir el producto digital que les encantará a tus usuarios.",
@@ -131,7 +131,7 @@ export const Component2 = () => {
 
 export const Component3 = () => {
   const serviceProps = {
-    mainIcon: <FaCloud size="20em" color="#034ea2" />,
+    mainIcon: <FaCloud size="14em" color="#034ea2" />,
     mainTitle: "Cloud computing",
     mainSubTitle:
       "Con los servicios de Cloud Infrastructure le brindamos escalabilidad a su empresa.",

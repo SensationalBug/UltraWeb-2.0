@@ -11,7 +11,9 @@ export const ServiceComponent = (props) => {
     <>
       <Container>
         <Row className="homeSection  justify-content-center">
-          <Col className="my-auto toggleLogo">{serviceProps.mainIcon}</Col>
+          <Col className="mt-auto my-md-auto col-md-6 col-12 toggleLogo">
+            {serviceProps.mainIcon}
+          </Col>
           <Titular
             title={serviceProps.mainTitle}
             subTitle={serviceProps.mainSubTitle}
@@ -26,6 +28,7 @@ export const ServiceComponent = (props) => {
             subTitle="Somos flexibles y nos adaptamos a las necesidades de nuestros clientes."
           />
           <ServiceCard
+            clase="service"
             enter={() => {}}
             out={() => {}}
             icono={serviceProps.firstCardIcon}
@@ -33,6 +36,7 @@ export const ServiceComponent = (props) => {
             subTitle={serviceProps.firstCardSubTitle}
           />
           <ServiceCard
+            clase="service"
             enter={() => {}}
             out={() => {}}
             icono={serviceProps.secondCardIcon}
@@ -40,6 +44,7 @@ export const ServiceComponent = (props) => {
             subTitle={serviceProps.secondCardSubTitle}
           />
           <ServiceCard
+            clase="service"
             enter={() => {}}
             out={() => {}}
             icono={serviceProps.thirdCardIcon}
@@ -55,17 +60,34 @@ export const ServiceComponent = (props) => {
             title="Competencias tecnológicas"
             subTitle="Tenemos una amplia gama de competencias tecnológicas"
           />
-          <Col className="col-md-1 col-3 my-md-0 my-4 mx-md-auto">{serviceProps.competenciaIcon1}</Col>
-          <Col className="col-md-1 col-3 my-md-0 my-4 mx-md-auto">{serviceProps.competenciaIcon2}</Col>
-          <Col className="col-md-1 col-3 my-md-0 my-4 mx-md-auto">{serviceProps.competenciaIcon3}</Col>
-          <Col className="col-md-1 col-3 my-md-0 my-4 mx-md-auto">{serviceProps.competenciaIcon4}</Col>
-          <Col className="col-md-1 col-3 my-md-0 my-4 mx-md-auto">{serviceProps.competenciaIcon5}</Col>
-          <Col className="col-md-1 col-3 my-md-0 my-4 mx-md-auto">{serviceProps.competenciaIcon6}</Col>
-          <Col className="col-md-1 col-3 my-md-0 my-4 mx-md-auto">{serviceProps.competenciaIcon7}</Col>
+          <Col className="col-md-1 col-3 my-md-0 my-4 mx-md-auto">
+            {serviceProps.competenciaIcon1}
+          </Col>
+          <Col className="col-md-1 col-3 my-md-0 my-4 mx-md-auto">
+            {serviceProps.competenciaIcon2}
+          </Col>
+          <Col className="col-md-1 col-3 my-md-0 my-4 mx-md-auto">
+            {serviceProps.competenciaIcon3}
+          </Col>
+          <Col className="col-md-1 col-3 my-md-0 my-4 mx-md-auto">
+            {serviceProps.competenciaIcon4}
+          </Col>
+          <Col className="col-md-1 col-3 my-md-0 my-4 mx-md-auto">
+            {serviceProps.competenciaIcon5}
+          </Col>
+          <Col className="col-md-1 col-3 my-md-0 my-4 mx-md-auto">
+            {serviceProps.competenciaIcon6}
+          </Col>
+          <Col className="col-md-1 col-3 my-md-0 my-4 mx-md-auto">
+            {serviceProps.competenciaIcon7}
+          </Col>
         </Row>
       </Container>
 
-      <section style={{ backgroundColor: "#33b4f0" }} className="py-5 text-white">
+      <section
+        style={{ backgroundColor: "#33b4f0" }}
+        className="py-5 text-white"
+      >
         <SmallTitle
           title={serviceProps.lastTitle}
           subTitle={serviceProps.lastSubTitle}

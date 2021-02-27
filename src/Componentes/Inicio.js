@@ -2,7 +2,7 @@ import { React, useState } from "react";
 
 import { Footer } from "./Footer";
 import { Carrusel } from "./BackgroundComponents/Carrusel";
-import { ServiceCardHome } from "./BackgroundComponents/ServiceCardHome";
+import { ServiceCardHome } from "./BackgroundComponents/ServiceCard";
 import { Technologies } from "./BackgroundComponents/Technologies";
 import { ServiceButton } from "./BackgroundComponents/ServiceButton";
 import { DetailedService } from "./BackgroundComponents/DetailedService";
@@ -108,13 +108,13 @@ export const Inicio = () => {
             title="Diseñando tu web de la manera mas rápida y con la mejor calidad"
             subTitle="Nuestros servicios te ayudarán a mostrar tu imagen en la Web"
           />
-          <Col className="my-auto toggleLogo">
+          <Col className="my-auto toggleLogo col-md-6 col-12">
             <FontAwesomeIcon
               onMouseEnter={() => toggle(spinMainLogo, setSpinMainLogo)}
               onMouseLeave={() => toggle(spinMainLogo, setSpinMainLogo)}
               icon={faLaptopCode}
               size="10x"
-              className="w-50 h-25 logoColor"
+              className="logoColor"
               spin={spinMainLogo}
             />
           </Col>
@@ -170,7 +170,7 @@ export const Inicio = () => {
       </Container>
 
       <section className="container-fluid servicesSection my-5">
-        <Row>
+        <Row className="py-4">
           <SmallTitle
             title="Nuestros servicios"
             subTitle="Satisfaciendo todas sus necesidades"

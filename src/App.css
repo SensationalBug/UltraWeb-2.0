@@ -19,17 +19,21 @@
   color: #152525;
 }
 
-.openCollapse{
+.openCollapse {
   margin-left: 72%;
   margin-top: 25px;
 }
 
-.color{
+.color {
   background-color: #034ea2;
 }
 
 .logoColor {
   color: #034ea2;
+}
+
+.toggleLogo {
+  font-size: 3vh;
 }
 
 .homeSection,
@@ -119,11 +123,38 @@
   box-shadow: 0 0 34px 0 #33b4f0;
 }
 
+.nosotros,
+.pedro,
+.daniel,
+.lobelto {
+  border-radius: 10%;
+  transition: 0.5s;
+  height: 100%;
+}
+
+.nosotros:hover {
+  transform: translate(0, 5%);
+  box-shadow: 0 0 34px 0 #33f05c;
+}
+
+.pedro:hover {
+  transform: translate(-5%, -5%);
+  box-shadow: 0 0 34px 0 #f03333;
+}
+
+.lobelto:hover {
+  transform: translate(0, 5%);
+  box-shadow: 0 0 34px 0 #8b33f0;
+}
+.daniel:hover {
+  transform: translate(5%, -5%);
+  box-shadow: 0 0 34px 0 #e3f033;
+}
+
 @media only screen and (max-width: 600px) {
   .navBar {
     text-align: left;
   }
-  .toggleLogo,
   .serviceButton,
   .footerMsg,
   .contactFooterLabel {
@@ -143,9 +174,12 @@
   .footerSection {
     font-size: 10px;
   }
-  .openCollapse{
+  .openCollapse {
     margin-left: 80%;
     margin-top: 25px;
+  }
+  .contactSection {
+    height: 74vh;
   }
 }
 
@@ -153,8 +187,11 @@
   .homeSection {
     height: 50vh;
   }
-  .openCollapse{
+  .openCollapse {
     margin-left: 80%;
     margin-top: 25px;
+  }
+  .contactSection {
+    height: 71vh;
   }
 }

@@ -1,4 +1,5 @@
 import "./App.css";
+import './FirebaseConfig/FirebaseConfig'
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Navegacion } from "./Componentes/Navegacion";
