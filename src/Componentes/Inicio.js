@@ -217,7 +217,7 @@ export const Inicio = () => {
         </Row>
       </Container>
 
-      <Footer footerProps="container-fluid footerSection py-2"/>
+      <Footer />
     </>
   );
 };

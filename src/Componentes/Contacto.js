@@ -138,7 +138,6 @@ export const Contacto = () => {
           </Col>
         </Row>
       </Container>
-      <Footer  footerProps="container-fluid footerSection py-2 fixed-bottom"/>
     </>
   );
 };

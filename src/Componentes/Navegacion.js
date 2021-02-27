@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import { Navbar, Collapse, NavbarToggler, NavItem, Nav } from "reactstrap";
-import { FaAngleDown } from 'react-icons/fa'
+import { Footer } from "./Footer";
 
 export const Navegacion = () => {
   const [isCollapseOpen, setCollapseOpen] = useState(false);
