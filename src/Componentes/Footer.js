@@ -2,7 +2,7 @@ import { React } from "react";
 import { Row, Col } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
-import { MdEmail, MdPhoneAndroid } from 'react-icons/md';
+import { MdEmail } from 'react-icons/md';
 
 export const Footer = () => {
   return (
@@ -23,7 +23,7 @@ export const Footer = () => {
             </Col>
             <Col className="py-0">
                 <MdEmail size="2em" />
-                <span>UltraWeb@gmail.com</span>
+                <span>UltraWeb07@gmail.com</span>
             </Col>
         </Col>
       </Row>
