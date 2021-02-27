@@ -10,6 +10,7 @@
 
 # production
 /build
+/faviconFolder
 
 # misc
 .DS_Store
