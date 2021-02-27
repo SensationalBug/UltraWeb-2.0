@@ -22,8 +22,8 @@ export const Footer = () => {
                 <span>Breiydl@gmail.com</span>
             </Col>
             <Col className="py-0">
-                <MdPhoneAndroid size="2em" />
-                <span>809-252-6353</span>
+                <MdEmail size="2em" />
+                <span>UltraWeb@gmail.com</span>
             </Col>
         </Col>
       </Row>
