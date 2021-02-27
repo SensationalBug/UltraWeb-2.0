@@ -178,9 +178,6 @@
     margin-left: 80%;
     margin-top: 25px;
   }
-  .contactSection {
-    height: 74vh;
-  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -190,8 +187,5 @@
   .openCollapse {
     margin-left: 80%;
     margin-top: 25px;
-  }
-  .contactSection {
-    height: 71vh;
   }
 }

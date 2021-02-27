@@ -66,7 +66,7 @@ export const Servicios = () => {
         </Router>
       </Container>
 
-      <Footer />
+      <Footer  footerProps="container-fluid footerSection py-2"/>
     </>
   );
 };

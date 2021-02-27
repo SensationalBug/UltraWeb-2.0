@@ -216,7 +216,7 @@ export const Nosotros = () => {
         </Row>
       </Container>
 
-      <Footer />
+      <Footer  footerProps="container-fluid footerSection py-2"/>
     </>
   );
 };

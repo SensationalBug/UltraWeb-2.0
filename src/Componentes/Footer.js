@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import { MdEmail, MdPhoneAndroid } from 'react-icons/md';
 
-export const Footer = () => {
+export const Footer = (props) => {
   return (
-    <section className="container-fluid footerSection py-2">
+    <section className={props.footerProps}>
       <Row>
         <Col className="text-md-left text-white col-md-8 col-sm-12 ml-md-5">
           <FontAwesomeIcon icon={faLaptopCode} size="4x" className="ml-md-5" />

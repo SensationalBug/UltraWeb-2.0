@@ -85,7 +85,7 @@ export const Contacto = () => {
 
   return (
     <>
-      <Container className="contactSection my-3 my-md-4">
+      <Container className="my-3 my-md-4">
         <Row>
           <Col className="col-12 py-3">
             <small className="h2 text-uppercase text-muted">Contáctanos</small>
@@ -138,7 +138,7 @@ export const Contacto = () => {
           </Col>
         </Row>
       </Container>
-      <Footer />
+      <Footer  footerProps="container-fluid footerSection py-2 fixed-bottom"/>
     </>
   );
 };
